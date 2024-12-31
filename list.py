@@ -51,4 +51,14 @@ listC.remove(1)
 print(f'after listC.remove(1) -> listA: {listA }, listC: {listC}, listD: {listD}')
 
 
+## 개척되지 않은 인덱스를 인덱스 통해 바로 append 가능?
+# 불가하다
+# Traceback (most recent call last):
+#   File "C:\Backend\doitAlgorithm\pythonBasic\list.py", line 56, in <module>
+#     listAA[1]=2
+#     ~~~~~~^^^
+# IndexError: list assignment index out of range
 
+listAA = [0]
+listAA.append(2)#listAA[1]=2 하면 에러남
+print(listAA)
